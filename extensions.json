@@ -137,7 +137,12 @@
     "repository": "https://github.com/bpruitt-goddard/vscode-mermaid-syntax-highlight"
   },
   "bradlc.vscode-tailwindcss": {
-    "repository": "https://github.com/tailwindlabs/tailwindcss-intellisense"
+    "repository": "https://github.com/tailwindlabs/tailwindcss-intellisense",
+    "location": "packages/vscode-tailwindcss",
+    "custom": [
+      "npx -y pnpm install",
+      "cd packages/vscode-tailwindcss && vsce package --no-dependencies -o extension.vsix"
+    ]
   },
   "BriteSnow.vscode-toggle-quotes": {
     "repository": "https://github.com/BriteSnow/vscode-toggle-quotes"
@@ -280,9 +285,6 @@
   },
   "eamodio.gitlens": {
     "repository": "https://github.com/eamodio/vscode-gitlens"
-  },
-  "eclipse-cdt.cdt-gdb-vscode": {
-    "repository": "https://github.com/eclipse-cdt/cdt-gdb-vscode"
   },
   "ecmel.vscode-html-css": {
     "repository": "https://github.com/ecmel/vscode-html-css"
@@ -597,6 +599,9 @@
   "lextudio.restructuredtext": {
     "repository": "https://github.com/vscode-restructuredtext/vscode-restructuredtext"
   },
+  "Linhmtran168.mac-ca-vscode": {
+    "repository": "https://github.com/linhmtran168/mac-ca-vscode"
+  },  
   "lintangwisesa.arduino": {
     "repository": "https://github.com/LintangWisesa/VScode-Arduino-Theme"
   },
@@ -1389,6 +1394,9 @@
   },
   "tonsky.theme-alabaster": {
     "repository": "https://github.com/tonsky/vscode-theme-alabaster"
+  },
+  "tonybaloney.vscode-pets": {
+    "repository": "https://github.com/tonybaloney/vscode-pets"
   },
   "torn4dom4n.latex-support": {
     "repository": "https://github.com/AREA44/vscode-LaTeX-support"
